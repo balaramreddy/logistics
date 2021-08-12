@@ -1,0 +1,60 @@
+<div class="main-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+  
+      <form class="example-form " #registerform="ngForm" (ngSubmit)="submit(registerform)">
+  
+        <mat-card-content>
+            <mat-form-field class="example-full-width form-group">
+                <input matInput 
+                class="form-control"
+                placeholder="id"
+                name="id" 
+                ngModel
+                required>
+              </mat-form-field>
+
+          <mat-form-field class="example-full-width form-group">
+            <input matInput 
+            class="form-control"
+            placeholder="Username"
+            name="username" 
+            ngModel
+            required>
+          </mat-form-field>
+         
+          <mat-form-field class="example-full-width form-group">
+            <input matInput 
+            class="form-control"
+            placeholder="Email"
+            name="email"
+            ngModel
+            required>
+          </mat-form-field>
+          
+          <mat-form-field class="example-full-width form-group">
+            <input matInput 
+            class="form-control"
+            placeholder="Password"
+            name="password"
+            ngModel
+            required>
+          </mat-form-field>
+            
+          <mat-form-field class="example-full-width form-group">
+            <mat-label >Choose designation</mat-label>
+            <mat-select required class="form-control" name="designation" ngModel>
+              <mat-option [value]="user"  ngDefaultControl  *ngFor="let user of User">{{user}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+  
+        </mat-card-content>
+  
+        <button type="submit" mat-stroked-button color="accent" class="btn-block" [disabled]="!registerform.valid">Register</button>
+  
+      </form>
+    </mat-card>
+  </div>

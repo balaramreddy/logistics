@@ -1,0 +1,12 @@
+.card{
+    width: 100%;
+    height: 88vh;
+    padding-top: 125px;
+}
+.example-card{
+    width: 25%;
+    margin: auto;
+}
+.example-form .example-full-width{
+    width: 100%;
+}

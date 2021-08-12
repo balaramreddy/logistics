@@ -1,0 +1,17 @@
+
+<table border="1" >
+    <tr>
+        <th>Id</th>
+        <th>name</th>
+        <th>email</th>
+        <th>password</th>
+        <th>designation</th>
+    </tr>
+    <tr *ngFor="let us of userlists">
+        <td>{{us?.id}} </td>
+        <td>{{us?.username}} </td>
+        <td>{{us?.email}} </td>
+        <td>{{us?.password}} </td>
+        <td>{{us?.designation}}</td>
+    </tr>
+</table>

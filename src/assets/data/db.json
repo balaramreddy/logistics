@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": "120",
+      "designation": "User",
+      "email": "balaramreddyappala@gmail.com",
+      "password": "12345",
+      "username": "admin"
+    },
+    {
+      "id": "121",
+      "designation": "User",
+      "email": "test@gmail.com",
+      "password": "123453",
+      "username": "admintest"
+    },
+    {
+      "id": "122",
+      "designation": "User",
+      "email": "test2@gmail.com",
+      "password": "123454",
+      "username": "admintest2"
+    },
+    {
+      "id": "123",
+      "username": "admin",
+      "email": "balaramreddyappala@gmail.com",
+      "password": "ram@123",
+      "designation": "Admin"
+    },
+    {
+      "id": "125",
+      "username": "testuser",
+      "email": "testuser@gmail.com",
+      "password": "test",
+      "designation": "User"
+    }
+  ]
+}
